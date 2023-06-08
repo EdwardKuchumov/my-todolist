@@ -1,38 +1,84 @@
 .App {
   text-align: center;
+  background-color: gray;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  height: 800px;
+  font-family: 'Sora';
+  font-weight: 300;
+  background-image: url('https://img2.akspic.ru/attachments/originals/9/2/1/6/6/166129-california_streaming_apple_event_wallpaper_without_logo-6016x3543.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin-top: 100px;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.glass{
+  
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 400px;
+  height: 800px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  z-index: 10;
+  transform: translate(-50%, -50%);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tasklist{
+  position: relative;
+  margin: 0 20px;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task_border{
+  border-radius: 16px;
+  overflow: hidden;
+}
+.glass_item{
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #888888;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.glass_item_button{
+  margin-top: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  border-radius: 10%;
+}
+.glass_item:nth-last-child(1){
+  border-bottom: none;
+
 }
 
-.App-link {
-  color: #61dafb;
+.glass_item input{
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #ffffff;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dfaic{
+  display: flex;
+  align-items: center;
 }
